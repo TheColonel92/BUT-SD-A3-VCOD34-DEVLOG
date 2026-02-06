@@ -1,7 +1,13 @@
 import pandas as pd
 
 def preprocess_data(df):
-    """Nettoie et prépare les données du Titanic."""
+    """
+    Nettoie les données du Titanic et transforme les variables catégorielles.
+    Args:
+        df (pd.DataFrame): Le DataFrame brut.
+    Returns:
+        tuple: (X, y) les features et la cible.
+    """
     
     # 1. Sélection des colonnes utiles (on enlève le nom, le ticket, etc.)
     features = ["Pclass", "Sex", "SibSp", "Parch"]

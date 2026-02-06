@@ -1,9 +1,19 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from data_loader import load_titanic_data
-from preprocessing import preprocess_data
+from src.data_loader import load_titanic_data
+from src.data_preprocessing import preprocess_data
 
 def train_and_evaluate():
+    """
+    Entraîne le modèle Random Forest sur les données fournies. [cite: 37]
+    
+    Args:
+        X_train: Features d'entraînement.
+        y_train: Cible d'entraînement.
+        
+    Returns:
+        model: Le modèle entraîné.
+    """
     # 1. Chargement des données
     train_df, _ = load_titanic_data()
     
