@@ -1,31 +1,23 @@
-# Projet Titanic - BUT SD
+﻿Project repository for data/modeling exercises.
 
-Ce projet vise à prédire la survie des passagers du Titanic en utilisant des techniques d'apprentissage automatique (Machine Learning). Il a été structuré selon les principes du génie logiciel pour assurer sa modularité et sa reproductibilité.
+Contents:
+- `Source code/` : preprocessing and dataset code
+- `data/raw/` : raw CSV files used by the project
+- `notebooks/` : exploratory notebooks (e.g. `titanic-tutorial.ipynb`)
 
-## 🚀 Structure du Projet
+Quick start
+1. Create a virtual environment and activate it.
+2. Install dependencies:
 
-- `data/` : Contient les fichiers bruts (`train.csv`, `test.csv`).
-- `notebooks/` : Explorations initiales et tutoriels.
-- `src/` : Scripts sources modulaires :
-  - `data_loader.py` : Chargement automatique des données.
-  - `preprocessing.py` : Nettoyage, sélection des features et encodage.
-  - `model.py` : Entraînement du modèle Random Forest et évaluation.
-- `requirements.txt` : Liste des dépendances Python nécessaires.
-- `.gitignore` : Protection contre l'envoi de fichiers inutiles (venv, caches).
-
-## 🛠️ Installation et Utilisation
-
-1. **Créer l'environnement virtuel :**
-   ```powershell
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   Installer les dépendances :
-
-PowerShell
+```bash
 pip install -r requirements.txt
-Lancer l'entraînement et l'évaluation :
+```
 
-PowerShell
-python src/model.py
-📊 Résultats
-Le modèle actuel (Random Forest) obtient une précision d'environ 76% sur les données de validation internes.
+3. Run the small test script (interactive):
+
+```bash
+python test.py
+```
+
+Notes
+- This README contains minimal, factual instructions. For project-specific details, consult the notebooks and `Source code` files.

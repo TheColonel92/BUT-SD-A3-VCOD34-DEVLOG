@@ -1,5 +1,15 @@
-.venv/
+﻿# Ignore system and build files
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
 .ipynb_checkpoints/
+.vscode/
+.idea/
 desktop.ini
+.DS_Store
+Thumbs.db
