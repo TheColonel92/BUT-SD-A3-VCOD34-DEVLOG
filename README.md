@@ -16,18 +16,18 @@ Nous avons appliqué les bonnes pratiques de développement : refactorisation mo
 Architecture du Projet
 Le projet suit une structure modulaire pour séparer les responsabilités:
 
-── .github/workflows/  # Configuration de la Pipeline CI/CD (GitHub Actions)
-── data/               # Données brutes et traitées
-── docs/               # Documentation du projet
-── models/             # Modèles entraînés
-── notebooks/          # Code source
-    ── data loader       # Chargement des données
-    ── data preprocessing # Nettoyage et encodage (Sex, Pclass)
-    ── model training    # Entraînement du modèle
-    ── model evaluation  # Évaluation des performances
-── tests/              # Tests unitaires (Pytest)
-── requirements.txt    # Dépendances du projet
-── pyproject.toml      # Configuration des outils (Black, Flake8)
+├── .github/workflows/  # Configuration de la Pipeline CI/CD (GitHub Actions)
+├── data/               # Données brutes et traitées
+├── docs/               # Documentation du projet
+├── models/             # Modèles entraînés
+├── notebooks/          # Code source
+│   ├── data loader       # Chargement des données
+│   ├── data preprocessing # Nettoyage et encodage (Sex, Pclass)
+│   ├── model training    # Entraînement du modèle
+│   ├── model evaluation  # Évaluation des performances
+├── tests/              # Tests unitaires (Pytest)
+├── requirements.txt    # Dépendances du projet
+├── pyproject.toml      # Configuration des outils (Black, Flake8)
 
 Installation et Utilisation
 1. Prérequis
