@@ -6,12 +6,12 @@ Ce projet a été réalisé dans le cadre du cours d'Ingénierie Logicielle appl
 Nous avons appliqué les bonnes pratiques de développement : refactorisation modulaire, tests unitaires, respect des normes PEP 8, et mise en place d'une pipeline CI/CD.
 
 Équipe (BUT-SD-VCOD34)
-
+```
 -Léo Jean UNITE
 -Romain SALMERON
 -Baye-Badou DIENG
 -Diego CASAS
-
+```
 
 Architecture du Projet
 Le projet suit une structure modulaire pour séparer les responsabilités:
@@ -58,20 +58,23 @@ Qualité Logicielle & CI/CD
 Normes de code
 Nous utilisons des outils automatisés pour garantir la propreté du code:
 
+```
 Black : Formatage automatique du code.
 Flake8 : Linting pour vérifier la conformité PEP 8.
 Docstrings : Documentation systématique des fonctions.
+```
 
 Pipeline CI/CD (GitHub Actions)
 À chaque push sur la branche main, une pipeline automatique s'exécute pour:
 
+```
 Installer les dépendances.
 Vérifier le formatage (Black).
 Linter le code (Flake8).
 Lancer les tests unitaires (Pytest).
-
+```
 
 Note technique : Nous avons résolu des problèmes de compatibilité inter-plateformes (Windows/Linux) en purgeant les dépendances spécifiques à l'OS (comme pywinpty) du fichier requirements.txt.
 
-📊 Résultats du Modèle
+Résultats du Modèle
 Le modèle Random Forest implémenté atteint une précision de 76% sur le jeu de test. L'accent a été mis sur la reproductibilité du pipeline d'entraînement plutôt que sur la seule optimisation du score.
